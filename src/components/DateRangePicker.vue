@@ -331,6 +331,7 @@
           // this.open = false
           this.togglePicker(false, true)
         }
+        this.$emit('cancel', this)
       },
       clickRange (value) {
         this.start = new Date(value[0])
