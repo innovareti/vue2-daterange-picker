@@ -459,6 +459,7 @@
           // this.open = false
           this.togglePicker(false, true)
         }
+        this.$emit('cancel', this)
       },
       clickRange (value) {
         this.start = this.$dateUtil.validateDateRange(new Date(value[0]), this.minDate, this.maxDate)
